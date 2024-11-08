@@ -1,0 +1,25 @@
+@import "../../Assets/Scss/variables.scss";
+
+.toaster {
+  top: 20px;
+  right: 20px;
+  position: fixed;
+  min-width: 200px;
+  z-index: 10000;
+  background: $fitnee-brand-color;
+
+  .toasterHeader {
+    border: none;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+    background-color: transparent;
+  }
+  
+  .toasterHeaderArabic {
+    strong {
+      margin-left: auto !important;
+      margin-right: 0 !important;
+    }
+  }
+}

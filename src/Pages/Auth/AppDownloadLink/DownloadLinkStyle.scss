@@ -1,0 +1,31 @@
+@import "../../../Assets/Scss/globalStyleSheet.scss";
+
+$breakpoint-md: 767px;
+.CreditCardImg {
+  width: 75% !important;
+}
+.QRcodeDiv {
+  border: $yellow solid 2px;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
+  border-top: none;
+  box-shadow: 0 0 22px 5px rgba(245, 231, 76, 0.64);
+}
+@media screen and (max-width: $breakpoint-md) {
+  /* Additional styles for screens 768px and below */
+  .QRcodeDiv {
+    border: transparent solid 2px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top: none;
+    box-shadow: 0 0 0px 0px transparent;
+  }
+  .CreditCardImg {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .CreditCardImg {
+    width: 82% !important;
+  }
+}

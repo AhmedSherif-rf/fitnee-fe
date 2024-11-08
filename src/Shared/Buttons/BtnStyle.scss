@@ -1,0 +1,19 @@
+@import "../../Assets/Scss/globalStyleSheet.scss";
+
+.fillBtn,
+.OutlineBtn {
+  font-weight: bold !important;
+  border-radius: $border-radius-10 !important;
+  border: 2px solid transparent !important;
+  position: relative;
+}
+
+.fillBtn {
+  background-color: $yellow !important;
+  color: $black !important;
+}
+.OutlineBtn {
+  background-color: $white !important;
+  border: 2px solid $yellow !important;
+  color: $light-gray !important;
+}

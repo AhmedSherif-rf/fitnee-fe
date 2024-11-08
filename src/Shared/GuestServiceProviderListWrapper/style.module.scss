@@ -1,0 +1,19 @@
+.serviceProviderListWrapper {
+  .filterIcon {
+    width: 30px !important;
+  }
+  .blurCard {
+    opacity: 0.3;
+  }
+  .activeTrainerCard {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 500px) {
+  .serviceProviderListWrapper {
+    .filterIcon {
+      width: 20px !important;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../Assets/Scss/variables.scss";
+@import "../../Assets/Scss/globalStyleSheet.scss";
+.feedbackSwiperSlider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &.swiper-slide {
+    opacity: 0.3;
+
+    &.swiper-slide-active {
+      position: relative;
+      opacity: 0;
+      transition: all 0.45s linear 0.2s;
+      transform: scale(1.07);
+      &:hover {
+        @include customCard;
+      }
+    }
+  }
+  &:not(.swiper-slide-duplicate) {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+.feedbackSwiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  @include bgProperties;
+  width: 300px;
+  height: 400px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  display: NONE;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+// .swiper-initialized {
+//   padding-right: 20px;
+// }

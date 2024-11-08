@@ -1,0 +1,157 @@
+@import "../../../Assets/Scss/variables.scss";
+
+.App {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+.parrot-green {
+  background-color: $parrot-green;
+}
+.textLightGray {
+  color: $gray;
+}
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: $admin-dark-bg;
+  color: $white;
+  margin-left: -250px;
+  transition: all 0.5s;
+
+  .sidebar ul p {
+    color: $white;
+    padding: 10px;
+  }
+  .dark-gray {
+    color: $dark-gray;
+  }
+
+  li a.dropdown-toggle::after {
+    display: inline-flex;
+    color: $white !important;
+    position: relative;
+    left: 15%;
+    font-size: small;
+  }
+
+  .sidebar-header > span {
+    position: relative;
+    float: right;
+    margin: 0.5em;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+  }
+  .side-menu {
+    height: calc(100vh - 130px);
+    padding: 15px 2px;
+  }
+
+  .side-menu .nav .nav-item a {
+    color: $white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    &:hover {
+      color: $parrot-green;
+    }
+  }
+  .AdminActive {
+    background-color: $parrot-green;
+    color: black !important;
+    font-weight: 700;
+  }
+
+  .side-menu::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .side-menu::-webkit-scrollbar-thumb {
+    background: $admin-dark-bg;
+    border-radius: 3px;
+  }
+
+  .side-menu::-webkit-scrollbar-thumb:hover {
+    background: $admin-dark-bg;
+  }
+}
+
+.sidebar.is-open {
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.content {
+  padding: 10px;
+  margin-left: 0;
+  height: 100vh;
+  background-color: $off-white;
+}
+@mixin iconBadge {
+  .GoPencil,
+  .GoTrash,
+  .approveUser,
+  .rejectUser,
+  .GoEye {
+    color: $dark-gray;
+  }
+}
+.iconBadge {
+  @include iconBadge;
+  &:hover {
+    .GoPencil {
+      color: $blur-color !important;
+    }
+    .approveUser {
+      color: $green !important;
+    }
+    .rejectUser {
+      color: $red !important;
+    }
+    .GoTrash {
+      color: $orange !important;
+    }
+    .GoEye {
+      color: $yellow !important;
+    }
+  }
+}
+.AdminCard {
+  filter: drop-shadow(1px 2px 4px $gray);
+  &:hover {
+    filter: drop-shadow(1px 2px 4px $yellow);
+  }
+  border: none;
+}
+.AdminCardBody {
+  h4 {
+    color: $black;
+  }
+  p {
+    color: $dark-bg;
+  }
+  .cardIcon {
+    opacity: 0.4;
+  }
+}
+.messageWidth{
+  max-width: 350px;
+}
+@media only screen and (max-width: 768px) {
+  .content.is-open {
+    margin-left: 100%;
+  }
+  .messageWidth{
+    max-width: 130px;
+  }
+  .sidebar.is-open {
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    transition: all 0.5s, height 0s;
+  }
+
+  .sidebar.is-open > .sidebar-header span {
+    display: unset;
+  }
+}

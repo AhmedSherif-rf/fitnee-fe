@@ -1,0 +1,28 @@
+@import "../../../../Assets/Scss/variables.scss";
+
+.stripedTable {
+  border-collapse: collapse;
+  width: 100%;
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: $font-14;
+    color: $gray;
+  }
+
+  th {
+    background-color: $content-bg;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: $content-bg;
+    }
+    tr:hover {
+      background-color: $content-bg;
+    }
+  }
+}

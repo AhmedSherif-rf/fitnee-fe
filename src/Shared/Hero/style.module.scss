@@ -1,0 +1,25 @@
+@import "../../Assets/Scss/variables.scss";
+@import "../../Assets/Scss/globalStyleSheet.scss";
+
+.heroSectionWrapper {
+  .heroSectionLeftContent {
+    .heroTextBackground {
+      background-image: url("../../Assets/Images/homeScreen/HeroTextBgImage.png");
+      @include bgProperties;
+      height: 100% !important;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSectionWrapper {
+    .heroSectionLeftContent {
+      .heroTextBackground {
+        background-image: url("../../Assets/Images/homeScreen/HeroTextBgImage.png");
+        @include bgProperties;
+        height: 100% !important;
+      }
+    }
+  }
+}

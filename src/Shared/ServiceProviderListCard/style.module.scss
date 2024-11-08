@@ -1,0 +1,45 @@
+@import "../../Assets/Scss/variables.scss";
+
+.Card {
+  position: relative;
+  overflow: hidden;
+
+  &:hover .infoContainer {
+    right: 0;
+  }
+
+  .infoContainer {
+    content: "";
+    position: absolute;
+    right: -85%;
+    bottom: 12px;
+    overflow: hidden;
+    border: 0px;
+    width: 90% !important;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px !important;
+    transition: right 0.5s ease-in-out;
+
+    &::before {
+      content: "\2039";
+      padding-bottom: 5px;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      bottom: 0;
+      font-size: 50px;
+      font-weight: 600;
+      color: white;
+      left: 0;
+      height: 100%;
+      background: $yellow;
+      width: 20px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &:hover .infoContainer.open {
+    right: 0;
+  }
+}

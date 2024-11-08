@@ -1,0 +1,32 @@
+@import "../../Assets/Scss/variables.scss";
+
+.deleteButton {
+  border: none;
+  position: absolute;
+  background: $white;
+  color: $red;
+  right: 5px;
+  border-radius: 30px;
+  top: 5px;
+  span {
+    color: red !important;
+  }
+}
+
+.certificationTitle {
+  bottom: 0;
+  border: none;
+  color: $white;
+  height: 3rem;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.editRequestWrapper {
+  background-color: $light-white;
+}

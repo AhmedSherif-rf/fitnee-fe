@@ -1,0 +1,19 @@
+@import "../../Assets/GlobalStyle.scss";
+@import "../../../../Assets/Scss/variables.scss";
+.containerAfter{
+    position: relative;
+    &::after{
+        content:"";
+        top:0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background-color: $yellow;
+        height: 300px;
+        width: 100%;
+        z-index: 1;
+    }
+    .cardHeight{
+        height: 84vh;
+    }
+}

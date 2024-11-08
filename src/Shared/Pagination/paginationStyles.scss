@@ -1,0 +1,28 @@
+@import "../../Assets/Scss/variables.scss";
+
+.pagination {
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+
+  .activePageLink {
+    font-size: 15px;
+    font-weight: bolder;
+    color: $parrot-green;
+  }
+
+  li {
+    margin-left: -8px;
+    border-radius: 5px;
+
+    a {
+      width: 100%;
+      cursor: pointer;
+      padding: 0px 8px 0px 8px;
+      margin-left: 3px;
+      border-radius: 5px;
+    }
+  }
+}

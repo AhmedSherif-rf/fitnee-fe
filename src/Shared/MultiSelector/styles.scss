@@ -1,0 +1,27 @@
+@import "../../Assets/Scss/variables.scss";
+
+.customMultiSelector {
+  
+  .css-13cymwt-control {
+    border-radius: 14px !important;
+    padding: 8px 8px;
+
+    &:hover {
+      outline: none !important;
+      border-color: $parrot-green;
+      box-shadow: none;
+    }
+  }
+  .css-1nmdiq5-menu {
+    color: $black !important;
+  }
+  .css-t3ipsp-control {
+    border-radius: 14px !important;
+    padding: 8px 8px;
+    &:hover {
+      outline: none !important;
+      box-shadow: none;
+      border-color: $parrot-green;
+    }
+  }
+}

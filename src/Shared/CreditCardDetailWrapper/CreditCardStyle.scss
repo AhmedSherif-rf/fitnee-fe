@@ -1,0 +1,121 @@
+@import "../../Assets/Scss//globalStyleSheet.scss";
+.CreditCard {
+  .form-switch {
+    .form-check-input {
+      width: 35px;
+      background-image: url("https://fitme-dev-bucket.s3.eu-north-1.amazonaws.com/media/webStatic/greenCircle.png");
+      background-size: 38%;
+      &:focus {
+        box-shadow: none;
+      }
+      cursor: pointer;
+
+      &:checked {
+        background-image: url("https://fitme-dev-bucket.s3.eu-north-1.amazonaws.com/media/webStatic/yellowCircle.png");
+        background-size: 38%;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      &:before {
+        content: "";
+      }
+    }
+  }
+}
+
+.CardDetails {
+  .card {
+    .card-header {
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+    }
+    .card-footer {
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+  }
+}
+.wpwl-container {
+  .wpwl-form-card {
+    .wpwl-label{
+      color:$white;
+    }
+ 
+    text-align: left;
+    color:$dark-bg;
+    border: 0px;
+    border-radius: 20px;
+    background-color: transparent;
+    @include bgProperties;
+    background-image: url("https://fitme-dev-bucket.s3.eu-north-1.amazonaws.com/media/webStatic/PaymentMethod.png");
+
+    .wpwl-wrapper {
+      .wpwl-control-cardHolder{
+        color:$dark-bg;
+      }
+      select {
+        background: #282828;
+        padding-top: 0px !important;
+        color: white;
+      }
+    }
+  }
+}
+.wpwl-form-virtualAccount {
+  background-color: transparent;
+  @include bgProperties;
+  background-image: url("https://fitme-dev-bucket.s3.eu-north-1.amazonaws.com/media/webStatic/Card__4.png");
+  .wpwl-label {
+    display: flex;
+    justify-content: left;
+    color: white;
+  }
+  .wpwl-group-brand {
+    .wpwl-brand-STC_PAY {
+      margin-right: 0;
+    }
+    .wpwl-brand {
+      left: 0px !important;
+    }
+  }
+}
+.wpwl-wrapper-submit {
+  display: flex;
+  justify-content: left;
+  .wpwl-button {
+    background: $yellow;
+    border: none;
+    border-radius: 10px;
+  }
+}
+.wpwl-label{
+  content:" " !important;
+}
+.countryContainerClass {
+  .stdropdown-container {
+    border-radius: 14px !important;
+    border: 1px solid $placeholder-color;
+
+    .stdropdown-input {
+      padding: 8px 5px !important;
+    }
+    .stsearch-box input {
+      border: none !important;
+
+      &:hover {
+        border: none !important;
+        outline: none !important;
+      }
+
+      &:focus {
+        border: none !important;
+        outline: none !important;
+      }
+    }
+  }
+}
+
+.wpwl-control-cardNumber {
+  direction: ltr !important;
+}

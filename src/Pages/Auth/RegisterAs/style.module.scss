@@ -1,0 +1,12 @@
+@import '../../../Assets/Scss/globalStyleSheet.scss';
+
+.registerAsContainer {
+  .registerAsWrapper {
+
+    @include bgProperties;
+
+    .registerAsContent {
+      padding-top: 20vh;
+    }
+  }
+}

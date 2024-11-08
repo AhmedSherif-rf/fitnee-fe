@@ -1,0 +1,56 @@
+@import "../../Assets/Scss/variables.scss";
+@import "../../Assets/Scss/globalStyleSheet.scss";
+
+.featureSectionWrapper {
+  overflow: hidden;
+  background-image: linear-gradient(
+      0deg,
+      rgba(108, 107, 107, 0.2) 0%,
+      rgba(126, 124, 124, 0.2) 100%
+    ),
+    url("../../Assets/Images/homeScreen/FeatureSectionBgImage.svg");
+  background-attachment: fixed;
+  @include bgProperties;
+  align-items: center;
+
+  .featureTextSlider {
+    width: 45vw;
+    padding: 10px;
+    align-items: center;
+    height: 200px !important;
+
+    div {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+  }
+  .featureSectionRightContent {
+    background-color: rgba(247, 247, 247, 0);
+    .cardSwiper {
+      width: 100%;
+      .cardSwiperSlider {
+        @include bgProperties;
+        background-size: contain !important;
+        height: 600px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .featureSectionWrapper {
+    .featureTextSlider {
+      width: 90vw;
+      div {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 820px) {
+  .featureSectionWrapper {
+    .featureTextSlider {
+      width: 98vw;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import "./Assets/Scss/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300&display=swap");
+
+* {
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+
+.wpwl-apple-pay-button {
+  -webkit-appearance: -apple-pay-button !important;
+}
+
+/*navbar styling*/
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.5em;
+  vertical-align: 0 !important;
+  content: "\276E" !important;
+  color: var(--yellow) !important;
+  border: none !important;
+  transform: rotate(270deg);
+  font-size: 20px;
+}
+
+.bg-white-custom {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.nav-link {
+  display: flex !important;
+  cursor: pointer;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.custom-dropdown-menu {
+  border: none !important;
+  box-shadow: 1px 1px 8px #808080;
+}
+
+.custom-dropdown-menu.show {
+  padding: 4px !important;
+}
+
+.dropdown-item {
+  display: flex !important;
+  gap: 15px;
+  align-items: center;
+}

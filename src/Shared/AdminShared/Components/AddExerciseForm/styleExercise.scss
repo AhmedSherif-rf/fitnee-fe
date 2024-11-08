@@ -1,0 +1,21 @@
+@import "../../Assets/GlobalStyle.scss";
+@import "../../../../Assets/Scss/variables.scss";
+
+.navTab {
+  .nav {
+   border-color:$parrot-green  ;
+    .nav-item { 
+     .nav-link{
+      color:$black;
+      font-weight: 600;
+     }
+      .active {
+        border-top:$parrot-green  solid 1px;
+        border-left:$parrot-green  solid 1px;
+        border-right:$parrot-green  solid 1px;
+        color: $yellow !important;
+      }
+    }
+  }
+}
+

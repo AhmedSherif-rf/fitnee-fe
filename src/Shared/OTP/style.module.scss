@@ -1,0 +1,36 @@
+@import "../../Assets/Scss/variables.scss";
+
+.otpContainer {
+  .otpDiv {
+    height: 200px;
+    margin-left: 16px;
+    input {
+      margin: -16px;
+      width: 50px !important;
+      height: 50px !important;
+      border-radius: 14px !important;
+      border: rgb(68, 68, 68) solid 2px;
+      font-size: 25px;
+      color: $yellow;
+      font-weight: bold;
+    }
+  }
+}
+@media screen and (max-width: 475px) {
+  .otpContainer {
+    .otpDiv {
+      height: 80px;
+      margin-left: 18px;
+      input {
+        margin: -16px;
+        width: 42px !important;
+        height: 42px !important;
+        border-radius: 14px !important;
+        border: rgb(68, 68, 68) solid 2px;
+        font-size: 25px;
+        color: $yellow;
+        font-weight: bold;
+      }
+    }
+  }
+}

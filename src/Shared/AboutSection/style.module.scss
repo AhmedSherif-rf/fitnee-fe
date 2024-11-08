@@ -1,0 +1,14 @@
+@import "../../Assets/Scss/globalStyleSheet.scss";
+
+.aboutContainer {
+  background-image: url("../../Assets//Images/AboutImg.svg");
+  @include bgProperties;
+  height: 100vh;
+  background-position: top center;
+  background-attachment: fixed;
+  .aboutImg {
+    background-attachment: local;
+  }
+}
+@media (max-width: 575px) {
+}

@@ -1,0 +1,21 @@
+@import "../../Assets/Scss/globalStyleSheet.scss";
+
+.CustomProgress {
+  background-color: $white !important;
+  border: 1px solid $yellow;
+  height: 10px !important;
+  .progress-bar-striped {
+    background-image: linear-gradient(
+      45deg,
+      rgba(145, 245, 51, 0.699) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(145, 245, 51, 0.507) 50%,
+      rgba(145, 245, 51, 0.925) 75%,
+      transparent 75%,
+      transparent
+    );
+    background-size: 15px 15px;
+    background-color: $yellow !important;
+  }
+}

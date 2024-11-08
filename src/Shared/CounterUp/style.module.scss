@@ -1,0 +1,16 @@
+@import "../../Assets/Scss//globalStyleSheet.scss";
+.CountUp {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4px;
+    color:$white !important;
+}
+
+@media  screen and (max-width: 576px) {
+    .CountUp {
+        font-size: 24px;
+        color:$white !important;
+    }
+}

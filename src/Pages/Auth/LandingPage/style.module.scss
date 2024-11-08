@@ -1,0 +1,23 @@
+@import "../../../Assets/Scss/globalStyleSheet.scss";
+
+.bannerImg {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("https://fitme-dev-bucket.s3.eu-north-1.amazonaws.com/media/webStatic/featureBg.svg");
+  @include bgProperties;
+  height: 80vh;
+  background-position: top center;
+  background-attachment: fixed;
+}
+.heroImg {
+  height: 100vh;
+}
+
+@media (max-width: 575px) {
+  .heroImg {
+    height: 45vh;
+  }
+}

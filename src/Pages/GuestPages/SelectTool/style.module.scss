@@ -1,0 +1,12 @@
+@import '../../../Assets/Scss/globalStyleSheet.scss';
+
+.selectToolContainer {
+  .selectToolWrapper {
+
+    @include bgProperties;
+
+    .selectToolContent {
+      padding-top: 20vh;
+    }
+  }
+}

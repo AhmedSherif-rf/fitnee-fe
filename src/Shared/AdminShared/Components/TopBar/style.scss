@@ -1,0 +1,22 @@
+@import "../../../../Assets/Scss/variables.scss";
+
+.admin-navbar {
+  background-color: $white;
+
+  .admin-navbar-toggler {
+    vertical-align: sub;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent !important;
+    }
+
+    &:active {
+      background-color: transparent !important;
+    }
+  }
+  .custom-dropdown-menu-Notifications {
+    left: -210px !important;
+    width: 300px !important;
+  }
+}
