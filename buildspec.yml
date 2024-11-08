@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "Installing dependencies..."
+      - npm install --force
+        #- npm audit fix
+  pre_build:
+    commands:
+      - echo "Running pre-build tasks..."
+  build:
+    commands:
+      - echo "Building React app..."
+      - export NODE_OPTIONS=--max-old-space-size=12288
+
+      - npm run build
+  post_build:
+    commands:
+      - echo "Running post-build tasks..."
+      - echo Archiving......
+ 
+artifacts:
+  files:
+    - '**/*'
+  discard-paths: no
+  base-directory: build
